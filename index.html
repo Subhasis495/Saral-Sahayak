@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saral Sahayak</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <!-- Chosen Palette: Warm Neutral Harmony -->
+    <!-- Application Structure Plan: The application transforms the linear slide deck into a vertically-scrolling narrative SPA. This structure is more engaging for a web audience than clicking through slides. It guides the user through the problem, solution, technology, and vision in a logical flow. The key interaction is a simulated demo of the app's functionality, which is more impactful than a static image. This design prioritizes storytelling and user engagement to make the pitch memorable. -->
+    <!-- Visualization & Content Choices: Report Info: Project Pitch -> Goal: Persuade & Inform -> Presentation Method: Interactive Narrative SPA -> Interaction: User scrolls through sections that animate into view. A core interactive demo allows users to click a button to 'process' a sample document and see the simplified output appear. This direct interaction with the core concept is more powerful than a chart. Other elements like tabs for the feasibility plan break down dense information into digestible chunks. Justification: This approach turns a passive presentation into an active experience, making the solution feel more tangible and real. Library: Vanilla JS for all interactions. No Chart.js needed as there is no quantitative data to plot. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    
+</head>
+<body class="antialiased">
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+        
+        <section id="slide1" class="text-center min-h-screen flex flex-col justify-center items-center section-fade-in">
+            <div class="max-w-4xl">
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight text-stone-900">
+                    Saral Sahayak
+                </h1>
+                <p class="mt-4 text-xl md:text-2xl font-medium text-blue-500">(Simple Assistant)</p>
+                <p class="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-stone-600">
+                    Bridging the Bureaucratic Divide for Every Indian.
+                </p>
+                <a href="#slide2" class="mt-12 inline-block bg-blue-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105">
+                    Discover the Problem
+                </a>
+            </div>
+        </section>
+
+        <section id="slide2" class="py-20 sm:py-32 section-fade-in">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">A Wall of Words</h2>
+                <p class="mt-4 text-lg text-stone-600">This isn't a literacy problem; it's a communication problem. Millions are left confused and unable to access their rights and services.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200">
+                    <div class="text-4xl">⚖️</div>
+                    <h3 class="mt-4 text-xl font-semibold">Complex Jargon</h3>
+                    <p class="mt-2 text-stone-600">Official documents are filled with legal and technical terms that most citizens don't understand.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200">
+                    <div class="text-4xl">🌐</div>
+                    <h3 class="mt-4 text-xl font-semibold">Language Barrier</h3>
+                    <p class="mt-2 text-stone-600">Critical information is often only in English, excluding a vast portion of our population.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200">
+                    <div class="text-4xl">⚠️</div>
+                    <h3 class="mt-4 text-xl font-semibold">The Consequence</h3>
+                    <p class="mt-2 text-stone-600">Missed deadlines, unfair penalties, and a feeling of powerlessness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide3" class="py-20 sm:py-32 section-fade-in">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">The Solution: Instant Clarity</h2>
+                    <p class="mt-6 text-lg text-stone-600">Introducing Saral Sahayak, a simple web app that transforms confusing documents into clear, actionable advice. We put a friendly government assistant in every pocket.</p>
+                    <ul class="mt-8 space-y-4 text-left">
+                        <li class="flex items-start">
+                            <span class="text-blue-500 font-bold text-xl mr-4">1.</span>
+                            <span class="text-stone-700"><strong class="text-stone-900">UPLOAD</strong> a photo of any official document.</span>
+                        </li>
+                        <li class="flex items-start">
+                             <span class="text-blue-500 font-bold text-xl mr-4">2.</span>
+                            <span class="text-stone-700"><strong class="text-stone-900">UNDERSTAND</strong> its meaning in simple, conversational language.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-500 font-bold text-xl mr-4">3.</span>
+                            <span class="text-stone-700"><strong class="text-stone-900">ACT</strong> with confidence.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
+                    <div class="aspect-w-16 aspect-h-9 bg-stone-100 rounded-xl flex items-center justify-center">
+                        <div class="text-center p-4">
+                             <div class="w-20 h-20 mx-auto bg-blue-100 rounded-full flex items-center justify-center text-4xl">📄</div>
+                             <p class="mt-4 font-semibold text-stone-800">Your Document</p>
+                             <div class="text-4xl my-4">→</div>
+                             <div class="w-20 h-20 mx-auto bg-green-100 rounded-full flex items-center justify-center text-4xl">💡</div>
+                             <p class="mt-4 font-semibold text-stone-800">Clear Understanding</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="slide4" class="py-20 sm:py-32 section-fade-in">
+             <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">A Simple 3-Step Process</h2>
+            </div>
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white rounded-xl shadow-md border border-stone-200">
+                    <div class="text-5xl mb-4">📤</div>
+                    <h3 class="text-2xl font-bold">1. Upload</h3>
+                    <p class="mt-2 text-stone-600">Snap a photo or upload a PDF of your electricity bill, tax notice, or any official paper.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-md border border-stone-200">
+                    <div class="text-5xl mb-4">⚙️</div>
+                    <h3 class="text-2xl font-bold">2. Analyze</h3>
+                    <p class="mt-2 text-stone-600">Our AI engine instantly reads the document, identifies its purpose, and extracts the key info.</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-xl shadow-md border border-stone-200">
+                    <div class="text-5xl mb-4">✅</div>
+                    <h3 class="text-2xl font-bold">3. Understand</h3>
+                    <p class="mt-2 text-stone-600">Get a simple summary, key dates, and clear next steps in your chosen language.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide5" class="py-20 sm:py-32 section-fade-in">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">The Core Technology</h2>
+                <p class="mt-4 text-lg text-stone-600">We use the OpenAI API as a powerful reasoning engine. This is a thoughtful, multi-layered use of AI to solve a real-world problem.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h4 class="font-bold text-blue-800">Classification</h4>
+                    <p class="mt-1 text-sm text-blue-700">Is this a bill, a notice, or a scheme?</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h4 class="font-bold text-blue-800">Simplification & Translation</h4>
+                    <p class="mt-1 text-sm text-blue-700">"Explain this to an elderly person in simple Bengali."</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h4 class="font-bold text-blue-800">Structured Data Extraction</h4>
+                    <p class="mt-1 text-sm text-blue-700">Pulls out `amount_due`, `due_date`, etc.</p>
+                </div>
+                 <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                    <h4 class="font-bold text-blue-800">Actionable Guidance</h4>
+                    <p class="mt-1 text-sm text-blue-700">Generates a "What to Do Next" checklist.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="slide6" class="py-20 sm:py-32 section-fade-in">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">Interactive Demo</h2>
+                <p class="mt-4 text-lg text-stone-600">Experience the clarity. Click the button to decode a sample WBSEDCL electricity bill.</p>
+            </div>
+            <div class="mt-16 bg-white rounded-2xl shadow-lg border border-stone-200 p-4 sm:p-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="relative">
+                        <h3 class="font-bold text-lg text-center mb-4">Original Document (Before)</h3>
+                        <div id="document-viewer" class="bg-stone-50 border-2 border-dashed border-stone-300 rounded-lg p-4 h-96 overflow-y-auto font-mono text-xs text-stone-500 relative">
+                             <div class="document-scan-line"></div>
+                             <p class="font-bold text-stone-700">WBSEDCL - ELECTRICITY BILL</p>
+                             <p>CONSUMER DETAILS</p>
+                             <p>--------------------------</p>
+                             <p>NAME: Sri Example User</p>
+                             <p>ADDR: 123 Main St, Kolkata</p>
+                             <p>CONS ID: 203948573</p>
+                             <p>BILL NO: B202509-34857</p>
+                             <p>BILL DT: 01-09-2025</p>
+                             <br>
+                             <p>BILLING DETAILS</p>
+                             <p>--------------------------</p>
+                             <p>BILL PERIOD: 01-07-25 TO 31-08-25</p>
+                             <p>DUE DATE: 25-09-2025</p>
+                             <p>UNITS CONSUMED: 150 kWh</p>
+                             <p>PREV ARREARS: 0.00</p>
+                             <p>CURRENT DEMAND: 1250.00</p>
+                             <p>LPSC: 0.00</p>
+                             <p>NET AMT PAYABLE: <span class="font-bold text-stone-800">INR 1,250.00</span></p>
+                             <br>
+                             <p>NOTICE: Pay within due date to avoid late payment surcharge (LPSC). Disconnection possible for non-payment. This is a computer generated bill. E&OE.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg text-center mb-4">Saral Sahayak Output (After)</h3>
+                         <div id="output-container" class="bg-stone-50 border-2 border-stone-300 rounded-lg p-4 h-96 flex items-center justify-center">
+                            <button id="process-btn" class="bg-blue-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-600 transition-transform transform hover:scale-105">
+                                Decode Document
+                            </button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="slide7" class="py-20 sm:py-32 section-fade-in">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">Feasibility: The Solo Sprint</h2>
+                <p class="mt-4 text-lg text-stone-600">As a solo developer, speed and focus are key. This plan is 100% achievable within a 48-hour hackathon.</p>
+            </div>
+            <div class="mt-12 max-w-2xl mx-auto">
+                 <div class="bg-white rounded-lg shadow-md border border-stone-200 p-6">
+                    <p class="font-semibold text-stone-800"><strong>Tech Stack:</strong> Next.js & Vercel Serverless Functions for rapid full-stack development. Tesseract.js for in-browser OCR.</p>
+                    <div class="mt-6">
+                        <div class="flex border-b border-stone-200">
+                            <button data-tab="day1" class="tab-btn flex-1 py-3 font-semibold text-blue-600 border-b-2 border-blue-600">Day 1</button>
+                            <button data-tab="day2" class="tab-btn flex-1 py-3 font-semibold text-stone-500">Day 2</button>
+                        </div>
+                        <div id="day1" class="tab-content mt-4 text-stone-700">
+                             <ul class="list-disc list-inside space-y-2">
+                                 <li>Build the core backend pipeline: `Upload -> OCR -> OpenAI API -> Response`.</li>
+                                 <li>Prove the end-to-end flow with a basic UI.</li>
+                             </ul>
+                        </div>
+                        <div id="day2" class="tab-content mt-4 text-stone-700 hidden">
+                             <ul class="list-disc list-inside space-y-2">
+                                <li>Refine the multi-task AI prompt.</li>
+                                <li>Polish the user interface for a clean, intuitive experience.</li>
+                                <li>Deploy to Vercel for a live demo.</li>
+                             </ul>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="slide8" class="py-20 sm:py-32 section-fade-in">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">The Vision: Prototype to Platform</h2>
+            </div>
+            <div class="mt-16 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="text-2xl font-bold text-blue-600">Short-Term (3 Months)</h3>
+                     <ul class="mt-4 list-disc list-inside space-y-2 text-stone-700">
+                        <li><strong>Hyper-Focus:</strong> Perfect the app for one document type (e.g., KMC property tax) based on user feedback.</li>
+                        <li><strong>Build a Community:</strong> Share the tool in local groups to validate its usefulness and gather supporters.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md border border-stone-200">
+                    <h3 class="text-2xl font-bold text-blue-600">Long-Term Vision</h3>
+                     <ul class="mt-4 list-disc list-inside space-y-2 text-stone-700">
+                        <li><strong>Scale:</strong> Expand to cover all major document types and languages in India.</li>
+                        <li><strong>Partner:</strong> Collaborate with NGOs and Legal Aid clinics.</li>
+                        <li><strong>Sustain:</strong> Develop a B2G model to help agencies simplify their own communications.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+         <section id="slide9" class="py-20 sm:py-32 section-fade-in">
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold tracking-tight text-stone-900">Empowering Every Citizen</h2>
+                 <p class="mt-4 text-lg text-stone-600">Saral Sahayak is more than a tech tool. It's an instrument for real-world impact.</p>
+            </div>
+            <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                 <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:shadow-lg transition-shadow">
+                    <div class="text-3xl">💰</div>
+                    <h4 class="mt-2 font-semibold">Financial Inclusion</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:shadow-lg transition-shadow">
+                     <div class="text-3xl">🎓</div>
+                    <h4 class="mt-2 font-semibold">Digital Literacy</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:shadow-lg transition-shadow">
+                     <div class="text-3xl">🤝</div>
+                    <h4 class="mt-2 font-semibold">Increased Trust</h4>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-sm border border-stone-200 text-center hover:shadow-lg transition-shadow">
+                     <div class="text-3xl">💪</div>
+                    <h4 class="mt-2 font-semibold">Empowerment</h4>
+                </div>
+            </div>
+        </section>
+
+        <footer id="slide10" class="text-center py-20 section-fade-in">
+            <h2 class="text-4xl font-bold">Thank You</h2>
+            <p class="mt-4 text-lg text-stone-600">Let's build a more understandable India, together.</p>
+            <div class="mt-8 text-stone-800 font-semibold">Subhasis Dhara</div>
+            <!-- <div class="mt-1 text-stone-600">[Your Email / LinkedIn / GitHub Link]</div> -->
+        </footer>
+
+    </main>
+
+</body>
+</html>
